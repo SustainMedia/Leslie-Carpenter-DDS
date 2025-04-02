@@ -82,6 +82,20 @@
     transition: all linear 0.2s;
 }
 
+.nav-btn-mobile {
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    border: 1px solid #597462;
+    color: #3d2f2a;
+    background-color: white;
+    border-radius: 38px;
+    padding: .9rem 1.2rem;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    display: none;
+}
+
 .nav-btn-2:hover {
     background-color: #324137;
 }
@@ -112,10 +126,6 @@ footer {
 .footer_wrapper {
     display: flex;
     justify-content: space-between;
-}
-
-.footer-left {
-    width: 600px;
 }
 
 .footer-left p {
@@ -805,7 +815,7 @@ footer {
 
 #nav-container {
     max-width: 1530px;
-    width: 90%;
+    width: 98%;
 }
 
 .section-4-btn {
@@ -834,6 +844,43 @@ footer {
 .heading_box_main_section_7 {
     display: flex;
     justify-content: space-between;
+}
+
+.footer_links {}
+
+.footer_links .heading {
+    position: relative;
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    font-size: 29px;
+    color: white;
+}
+
+.footer_links .heading::before {
+    content: '';
+    width: 40px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+}
+
+.footer_links ul {
+    padding: 0;
+    margin-top: 32px;
+}
+
+.footer_links ul li {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+.footer_links ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: Open Sans, sans-serif;
+    font-size: 18px;
 }
 
 @media only screen and (max-width : 1500px) {
@@ -916,10 +963,6 @@ footer {
     .last-section-btn {
         font-size: 17px;
     }
-
-    .footer-left {
-        width: 510px;
-    }
 }
 
 @media only screen and (max-width : 1200px) {
@@ -933,6 +976,14 @@ footer {
 }
 
 @media only screen and (max-width: 992px) {
+    #number-desktop {
+        display: none;
+    }
+
+    .nav-btn-mobile {
+        display: block;
+    }
+
     .navbar-nav {
         margin-left: 0px;
     }
@@ -1039,16 +1090,22 @@ footer {
         flex-direction: column;
     }
 
-    .footer-left {
-        width: 100%;
-    }
-
-    .footer-right {
-        margin-top: 70px;
-    }
 }
 
 @media only screen and (max-width: 768px) {
+    .nav-btn-mobile {
+        font-family: "Playfair Display", serif;
+        font-weight: 400;
+        font-size: 17px;
+        border: 1px solid #597462;
+        color: #3d2f2a;
+        background-color: white;
+        border-radius: 38px;
+        padding: 10px 20px;
+        letter-spacing: 2px;
+        text-transform: capitalize;
+    }
+
     .hero_section_left h1 {
         font-size: 2.6rem;
     }
@@ -1124,6 +1181,23 @@ footer {
 }
 
 @media only screen and (max-width: 500px) {
+    .nav-btn-mobile {
+        font-family: "Playfair Display", serif;
+        font-weight: 400;
+        font-size: 13px;
+        border: 1px solid #597462;
+        color: #3d2f2a;
+        background-color: white;
+        border-radius: 38px;
+        padding: 7px 12px;
+        letter-spacing: 1px;
+        text-transform: capitalize;
+    }
+
+    #nav-container {
+        padding: 0;
+    }
+
     .section_4_heading_box p {
         margin-bottom: 0px;
     }
@@ -1240,5 +1314,77 @@ footer {
 
     footer {
         padding: 50px 10px 15px;
+    }
+
+    .footer_links .heading {
+        font-size: 22px;
+    }
+
+    .footer_links ul li a {
+        font-size: 16px;
+    }
+
+    .footer_links ul li {
+        margin-top: 3px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .nav-btn-mobile {
+        font-family: "Playfair Display", serif;
+        font-weight: 400;
+        font-size: 11px;
+        border: 1px solid #597462;
+        color: #3d2f2a;
+        background-color: white;
+        border-radius: 38px;
+        padding: 6px 7px;
+        letter-spacing: 0px;
+        text-transform: capitalize;
+    }
+}
+
+
+
+
+
+
+.footer_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer_box {
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+/* Layout on large screens based on original grid proportions */
+/* Total columns add up to 12: 3/12, 4/12, 2/12, 3/12 */
+.footer-left {
+    flex: 0 0 25%;
+    /* 3/12 */
+}
+
+.footer-main {
+    flex: 0 0 20%;
+    /* 4/12 */
+}
+
+.footer-service {
+    flex: 0 0 20%;
+    /* 2/12 */
+}
+
+.footer-right {
+    flex: 0 0 25%;
+    /* 3/12 */
+}
+
+/* Responsive layout: On smaller screens each box stacks full width */
+@media (max-width: 768px) {
+    .footer_box {
+        flex: 0 0 100%;
     }
 }
