@@ -831,6 +831,10 @@ footer {
     background-color: #324137;
 }
 
+.heading_box_main_section_7 {
+    display: flex;
+    justify-content: space-between;
+}
 
 @media only screen and (max-width : 1500px) {
 
