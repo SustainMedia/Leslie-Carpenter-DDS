@@ -770,6 +770,19 @@ footer {
     width: 90%;
 }
 
+.section-4-btn {
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    border: 1px solid #597462;
+    color: #ffffff;
+    background-color: #597462;
+    border-radius: 38px;
+    padding: .9rem 1.2rem;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
 
 @media only screen and (max-width : 1500px) {
 
@@ -1052,6 +1065,16 @@ footer {
 }
 
 @media only screen and (max-width: 500px) {
+    .section_4_heading_box p {
+    margin-bottom: 0px;
+    }
+    .services_box {
+        margin-top: 0px;
+    }
+    .section-4-btn {
+        font-size: 10px;
+    }
+
     .mybadge p {
         font-size: .7rem !important;
     }
