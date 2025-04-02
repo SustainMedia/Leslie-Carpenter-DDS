@@ -19,11 +19,26 @@ function setActiveNavItem() {
     });
 }
 
+function adjustMainContentPadding() {
+    const navbar = document.querySelector('.main-nav-box');
+    const mainContent = document.querySelector('.main-content');
+    
+    if (navbar && mainContent) {
+      const navbarHeight = navbar.offsetHeight;
+      mainContent.style.paddingTop = `${navbarHeight}px`;
+    }
+  }
+
 $(document).ready(function() {
     $("#header-placeholder").load("./assets/components/header.html");
-    setTimeout(setActiveNavItem, 100);
+    setTimeout(() => {
+        adjustMainContentPadding();
+        setActiveNavItem();
+      }, 100);
 });
 
 $(document).ready(function() {
     $("#footer-placeholder").load("./assets/components/footer.html");
 });
+
+window.addEventListener('resize', adjustMainContentPadding);
