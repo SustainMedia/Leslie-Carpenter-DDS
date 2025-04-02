@@ -183,6 +183,12 @@ footer {
     background-color: #fff;
     border-radius: 10px;
     gap: 22px;
+    cursor: pointer;
+    transition: all linear 0.1s;
+}
+
+.badge_inner_box:hover {
+    background-color: #f3f3f3;
 }
 
 .mybadge {
@@ -362,6 +368,7 @@ footer {
 }
 
 .smile_image_2 {
+    display: none;
     position: absolute;
     inset: auto auto 48% 45%;
 }
@@ -426,6 +433,8 @@ footer {
 
 .service_card .card-img img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .service_card .card-img {
