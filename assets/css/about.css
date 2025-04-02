@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.about_section_2 {
+    background-color: #f3f3f3 !important;
+}
+
+.about_section_5 {
+    background-color: white !important;
+}
+
+.about_section_6 {
+    background-color: #e9e9e9 !important;
+}
+
+.about_section_6_bg_img {
+    z-index: 0 !important;
+}
+
+.about_section_6_bg_img img {
+    width: 500px;
+}
+
+.section_6_last_image {
+    margin-top: 100px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.section_6_last_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section-6-img {
+    position: relative;
+}
+
+.section-6-bg-img {
+    top: 204px;
+}
+
+.about_section_4 {
+    background-color: white !important;
+}
+
+.working_with_card {}
+
+.working_with_card img {
+    width: 100%;
+    border-radius: 2rem;
+    height: 420px;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: 50% 0%;
+}
+
+.working_with_card .name {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-top: 25px;
+}
+
+.working_with_card .profession {
+    font-family: Open Sans, sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 992px) {
+    .about_section_6_bg_img img {
+        width: 271px;
+    }
+
+    .section-6-bg-img {
+        top: 1104px;
+    }
+}

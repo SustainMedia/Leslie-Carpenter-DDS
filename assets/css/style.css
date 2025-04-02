@@ -22,8 +22,32 @@
     text-decoration: none;
 }
 
+.nav-item {
+    padding: 4px 20px;
+    border-radius: 20px;
+    transition: all linear 0.2s;
+}
+
+.nav-item.active {
+    background: #dcdad9;
+}
+
+.nav-item.active .nav-link1 {
+    color: #597462;
+    font-weight: 600;
+}
+
+.nav-item:hover {
+    background: #dcdad9;
+}
+
+.nav-item:hover .nav-link1 {
+    color: #597462;
+    font-weight: 600;
+}
+
 .navbar-nav {
-    gap: 25px;
+    gap: 5px;
     margin-left: 20px;
 }
 
@@ -51,6 +75,11 @@
     padding: .9rem 1.2rem;
     letter-spacing: 2px;
     text-transform: capitalize;
+    transition: all linear 0.2s;
+}
+
+.nav-btn-2:hover {
+    background-color: #324137;
 }
 
 .nav-right-button-box {
@@ -95,6 +124,7 @@ footer {
     padding: 0;
     margin-top: 40px;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .footer-left ul li {
@@ -455,7 +485,7 @@ footer {
 
 .card-content p {
     font-family: Open Sans, sans-serif;
-    font-size: 1vw;
+    font-size: 22px;
     font-weight: 400;
     line-height: 1.5;
 }
@@ -468,7 +498,7 @@ footer {
 
 .card_learn_more_box p {
     font-family: Open Sans, sans-serif;
-    font-size: 1vw;
+    font-size: 22px;
     font-weight: 600;
     line-height: 1.5;
     margin: 0;
@@ -632,7 +662,7 @@ footer {
 
 .section-6-content-left p {
     font-family: Open Sans, sans-serif;
-    font-size: 1vw;
+    font-size: 22px;
     font-weight: 400;
     line-height: 1.6;
     margin-top: 30px;
@@ -781,6 +811,16 @@ footer {
     padding: .9rem 1.2rem;
     letter-spacing: 2px;
     text-transform: capitalize;
+    transition: all linear 0.2s;
+}
+
+.section-4-btn a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.section-4-btn:hover {
+    background-color: #324137;
 }
 
 
@@ -826,11 +866,11 @@ footer {
     }
 
     .card-content p {
-        font-size: .9rem;
+        font-size: 1rem;
     }
 
     .card_learn_more_box p {
-        font-size: .9rem;
+        font-size: 1rem;
     }
 
     .section-6-heading {
@@ -1061,16 +1101,21 @@ footer {
         padding: 2rem;
     }
 
+    .hero_section_left {
+        margin-right: 0;
+    }
 
 }
 
 @media only screen and (max-width: 500px) {
     .section_4_heading_box p {
-    margin-bottom: 0px;
+        margin-bottom: 0px;
     }
+
     .services_box {
         margin-top: 0px;
     }
+
     .section-4-btn {
         font-size: 10px;
     }
