@@ -392,7 +392,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 100px;
-    background-color: #2A7D2E;
+    background-color: #597462;
 }
 
 .mini-heading-section-4 img {
@@ -443,9 +443,9 @@
 
 .button-box-section-4 button {
     border: none;
-    background-color: #2A7D2E;
-    border-radius: 0.25rem;
-    padding: 6px 16px;
+    background-color: #597462;
+    border-radius: 33px;
+    padding: 10px 20px;
     font-size: 16px;
     font-weight: 600;
     color: white;
@@ -599,9 +599,11 @@
     border: none;
     font-size: 16px;
     padding: 12px 24px;
-    background-color: #2A7D2E;
+    background-color: #597462;
     color: white;
-    border-radius: 0.375rem;
+    border-radius: 40px;
+    transition: all linear 0.2s;
+    font-family: "Playfair Display", serif;
 }
 
 .label-main-box {
