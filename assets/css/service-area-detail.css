@@ -214,6 +214,17 @@
     font-size: 14px;
 }
 
+.input-boxes textarea {
+    width: 100%;
+    padding: 9px 15px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 0.375rem;
+    font-size: 14px;
+    height: 80px;
+    resize: none;
+}
+
 .input-boxes select {
     width: 100%;
     padding: 14px 15px;
