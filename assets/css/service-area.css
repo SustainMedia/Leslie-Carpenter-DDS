@@ -18,6 +18,11 @@
     margin: 0 auto;
 }
 
+.form-service-main-box {
+    display: flex;
+    justify-content: center;
+}
+
 .tag-box {
     display: flex;
     justify-content: center;
@@ -162,6 +167,7 @@
 }
 
 .form-main-box {
+    max-width: 904px;
     display: flex;
     box-shadow: 0 0 #0000, 0 0 #0000, 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
     border-radius: 0.375rem;
@@ -169,7 +175,7 @@
 
 .form-main-box .form-left {
     font-family: Open Sans, sans-serif;
-    width: 30%;
+    width: 40%;
     background-color: #66785e;
     padding: 48px;
     color: white;
