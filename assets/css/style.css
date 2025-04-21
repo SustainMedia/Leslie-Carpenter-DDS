@@ -22,7 +22,7 @@
     color: black;
     font-family: "Playfair Display", serif;
     font-weight: 400;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     text-decoration: none;
 }
 
@@ -30,7 +30,7 @@
     color: black;
     font-family: "Playfair Display", serif;
     font-weight: 400;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -74,7 +74,7 @@
 
 .navbar-nav {
     gap: 5px;
-    margin-left: 20px;
+    margin-left: auto;
 }
 
 .nav-btn-1 {
@@ -604,7 +604,13 @@ footer {
     display: flex;
     gap: 30px;
     align-items: center;
-    margin-top: 50px;
+}
+
+.slide-navigation-main-box {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .imgae_box img P {
@@ -627,7 +633,7 @@ footer {
 .slide_navigation {
     display: flex;
     gap: 25px;
-    position: absolute;
+    /* position: absolute; */
     bottom: 20px;
     z-index: 99;
     right: 0;
