@@ -589,7 +589,7 @@ footer {
 
 .review_text {
     font-family: Open Sans, sans-serif;
-    font-size: 2.3rem;
+    font-size: 2rem;
     font-weight: 400;
     line-height: 1.6;
     margin-top: 40px;
@@ -611,6 +611,12 @@ footer {
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    margin-top: 55px;
+}
+
+.imgae_box img {
+    width: 70px;
+    height: 70px;
 }
 
 .imgae_box img P {
