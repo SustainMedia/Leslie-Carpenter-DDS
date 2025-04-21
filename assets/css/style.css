@@ -26,6 +26,28 @@
     text-decoration: none;
 }
 
+.nav-link2 {
+    color: black;
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-link2:hover {
+    color: #597462;
+}
+
+#mobile {
+    display: none;
+}
+
+#desktop {
+    display: flex;
+}
+
 .nav-item {
     padding: 4px 20px;
     border-radius: 20px;
@@ -969,10 +991,6 @@ footer {
     .hero_section_left h1 {
         font-size: 3.6rem;
     }
-
-    .nav-right-button-box {
-        flex-direction: column;
-    }
 }
 
 @media only screen and (max-width: 992px) {
@@ -1088,6 +1106,14 @@ footer {
         display: flex;
         justify-content: space-between;
         flex-direction: column;
+    }
+
+    #mobile {
+        display: block;
+    }
+    
+    #desktop {
+        display: none;
     }
 
 }
