@@ -72,10 +72,15 @@
 
 .about-image-box {
     display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+    gap: 40px;
+    margin-top: 30px;
 }
 
 .about-image-box img {
     width: 100%;
+    border-radius: 20px;
 }
 
 @media only screen and (max-width: 992px) {
@@ -85,5 +90,11 @@
 
     .section-6-bg-img {
         top: 1104px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .about-image-box {
+        flex-direction: column;
     }
 }
