@@ -918,6 +918,10 @@ footer {
     font-size: 18px;
 }
 
+.service-link {
+    text-decoration: none;
+}
+
 @media only screen and (max-width : 1500px) {
 
     .standard_container,

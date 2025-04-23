@@ -1,11 +1,13 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light main-nav-box">
     <div class="container-fluid" id="nav-container">
         <a class="navbar-brand" href="index.html">
-            <img src="https://cdn.prod.website-files.com/67a3ee73f098d5e2742d5dfd/67a3ee9704b1efd86ab017fd_logo.svg" alt="">
+            <img src="https://cdn.prod.website-files.com/67a3ee73f098d5e2742d5dfd/67a3ee9704b1efd86ab017fd_logo.svg"
+                alt="">
         </a>
-        
+
         <button class="nav-btn-mobile" onclick="window.location.href='tel:+16267954389'">Call (626) 795-4369</button>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -13,11 +15,18 @@
                 <li class="nav-item">
                     <a class="nav-link1" href="about-us.html">About us</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link1" href="#">Resources</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link1" href="services.html">Dental Services</a>
+                <li class="nav-item dropdown custom-dropdown">
+                    <a class="nav-link1" href="#" id="servicesLink">Dental Services</a>
+                    <ul class="dropdown-menu-custom" id="servicesDropdown">
+                        <li><a class="dropdown-item" href="new-patient-exam.html">New Patient Exam</a></li>
+                        <li><a class="dropdown-item" href="peridontal-care-and-maintainance.html">Periodontal Care &
+                                Maintenance</a></li>
+                        <li><a class="dropdown-item" href="temporomandibular-joint.html">Temporomandibular Joint (TMJ)
+                                Evaluation</a></li>
+                        <li><a class="dropdown-item" href="teeth-whitening.html">Teeth Whitening</a></li>
+                        <li><a class="dropdown-item" href="denture-care.html">Denture Care</a></li>
+                        <li><a class="dropdown-item" href="family-dental-care.html">Family Dental Care</a></li>
+                    </ul>
                 </li>
                 <li class="nav-item" id="mobile">
                     <a class="nav-link2" href="contact-us.html">Contact Us</a>
@@ -25,8 +34,53 @@
             </ul>
             <div class="nav-right-button-box">
                 <a class="nav-link2" id="desktop" href="contact-us.html">Contact Us</a>
-                <button class="nav-btn-2" id="number-desktop" onclick="window.location.href='tel:+16267954389'">Call (626) 795-4369</button>
+                <button class="nav-btn-2" id="number-desktop" onclick="window.location.href='tel:+16267954389'">Call
+                    (626) 795-4369</button>
             </div>
         </div>
     </div>
 </nav>
+<style>
+    .custom-dropdown {
+        position: relative;
+    }
+
+    .dropdown-menu-custom {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: #ffffff;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        z-index: 1000;
+        min-width: 200px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .dropdown-menu-custom li a {
+        display: block;
+        padding: 10px 15px;
+        color: #000;
+        text-decoration: none;
+        font-size: 1.4rem;
+        font-family: "Playfair Display", serif;
+    }
+
+    .dropdown-menu-custom li a:hover {
+        background-color: #f8f9fa;
+    }
+
+    .custom-dropdown:hover .dropdown-menu-custom {
+        display: block;
+    }
+
+    @media only screen and (max-width: 500px) {
+        .dropdown-menu-custom li a {
+            font-size: 1rem;
+        }
+    }
+</style>
