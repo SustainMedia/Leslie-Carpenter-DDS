@@ -28,6 +28,56 @@
             height: 700px;
         }
 
+        .masonry {
+            column-gap: 20px;
+        }
+
+        .masonry img {
+            width: 100%;
+            display: block;
+            margin-bottom: 20px;
+            break-inside: avoid;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .masonry img:nth-of-type(1) {
+            height: 300px;
+        }
+
+        .masonry img:nth-of-type(2) {
+            height: 450px;
+        }
+
+        .masonry img:nth-of-type(3) {
+            height: 450px;
+        }
+
+        .masonry img:nth-of-type(4) {
+            height: 300px;
+        }
+
+        .masonry img:nth-of-type(5) {
+            height: 300px;
+        }
+
+        .masonry img:nth-of-type(6) {
+            height: 450px;
+        }
+
+        .masonry img:nth-of-type(7) {
+            height: 450px;
+        }
+
+        .masonry img:nth-of-type(8) {
+            height: 300px;
+        }
+
+        .services_box {
+            margin-top: 0px;
+        }
+
+
         @media only screen and (max-width: 992px) {
             .section-6-img img {
                 height: 100%;
@@ -35,6 +85,20 @@
 
             .section-6-content-left p {
                 margin-top: 0px;
+            }
+
+            .section-6-bg-img {
+                display: none;
+            }
+
+            .masonry {
+                margin-top: 30px;
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            .masonry img {
+                height: 300px !important;
             }
         }
 
@@ -55,100 +119,6 @@
 
     <div class="main-content">
 
-        <section class="home_page_section_4 about_section_4">
-            <div class="side_image"><img
-                    src="https://cdn.prod.website-files.com/67a3ee73f098d5e2742d5dfd/67a3ee9704b1efd86ab01813_Rectangle%204.svg"
-                    alt=""></div>
-            <div class="standard_container">
-                <div class="section_4_heading_box">
-                    <h1 class="standard_heading">Meet Our Team</h1>
-                    <!-- <p>We’re a 100% remote team spread all across the world. Join us!</p> -->
-                    <img src="https://cdn.prod.website-files.com/67a3ee73f098d5e2742d5dfd/67a3ee9704b1efd86ab01814_smile.svg"
-                        alt="" class="smile_image_2">
-                </div>
-
-                <div class="services_box">
-                    <div class="row">
-
-                        <div class="col-12 col-md-6 col-lg-3 mt-5">
-                            <div class="working_with_card">
-                                <img src="https://cdn.prod.website-files.com/67a3ee73f098d5e2742d5dfd/67d41b30fee4417ef1a00536_Amelia%20Laurent.avif"
-                                    alt="">
-                                <div class="name standard_heading">Leslie Carpenter</div>
-                                <div class="profession">Dentist</div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-md-6 col-lg-3 mt-5">
-                            <div class="working_with_card">
-                                <img src="https://cdn.prod.website-files.com/67a3ee73f098d5e2742d5dfd/67d41d36a19d4f47168aa702_Leslie.avif"
-                                    alt="">
-                                <div class="name standard_heading">Karen</div>
-                                <div class="profession">Administrative Assistant</div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-md-6 col-lg-3 mt-5">
-                            <div class="working_with_card">
-                                <img src="https://cdn.prod.website-files.com/67a3ee73f098d5e2742d5dfd/67d41d3881a078cb7da398ba_Daniela.avif"
-                                    alt="">
-                                <div class="name standard_heading">Maria</div>
-                                <div class="profession">Office Assistant</div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-md-6 col-lg-3 mt-5">
-                            <div class="working_with_card">
-                                <img src="https://cdn.prod.website-files.com/67a3ee73f098d5e2742d5dfd/67d41d363ee0a0bb8ddbe47c_karen.avif"
-                                    alt="">
-                                <div class="name standard_heading">Julie</div>
-                                <div class="profession">Dental Services Assistant</div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-md-6 col-lg-3 mt-5">
-                            <div class="working_with_card">
-                                <img src="https://cdn.prod.website-files.com/67a3ee73f098d5e2742d5dfd/67d41e79a19d4f47168c02c1_Lin.avif"
-                                    alt="">
-                                <div class="name standard_heading">Pam</div>
-                                <div class="profession">Registered Dental Hygienist</div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-md-6 col-lg-3 mt-5">
-                            <div class="working_with_card">
-                                <img src="https://cdn.prod.website-files.com/67a3ee73f098d5e2742d5dfd/67d41e7594e3dd2c52d605e2_Rita.avif"
-                                    alt="">
-                                <div class="name standard_heading">Lori</div>
-                                <div class="profession">Registered Dental Hygienist</div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-md-6 col-lg-3 mt-5">
-                            <div class="working_with_card">
-                                <img src="https://cdn.prod.website-files.com/67a3ee73f098d5e2742d5dfd/67d41e7a311995427a2a04c3_Laurent.avif"
-                                    alt="">
-                                <div class="name standard_heading">Anush</div>
-                                <div class="profession">Registered Dental Hygienist</div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-md-6 col-lg-3 mt-5">
-                            <div class="working_with_card">
-                                <img src="https://cdn.prod.website-files.com/67a3ee73f098d5e2742d5dfd/67d41d36a19d4f47168aa702_Leslie.avif"
-                                    alt="">
-                                <div class="name standard_heading">McKenna</div>
-                                <div class="profession">Registered Dental Hygienist</div>
-                            </div>
-                        </div>
-
-
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
         <section class="home_page_section_6">
             <div class="section-6-bg-img">
                 <img src="https://cdn.prod.website-files.com/67a3ee73f098d5e2742d5dfd/67a3ee9704b1efd86ab01817_Rectangle%2045.svg"
@@ -156,41 +126,193 @@
             </div>
             <div class="standard_container">
                 <div class="section-6-heading-box">
-                    <h1 class="standard_heading section-6-heading">About Our Team</h1>
+                    <h1 class="standard_heading section-6-heading">Meet Dr. Carpenter</h1>
+                    <p class="section-6-para">Dr. Leslie M.H. Carpenter combines decades of experience with a heartfelt
+                        commitment to her patients.</p>
                 </div>
 
                 <div class="section-6-content-main-box">
                     <div class="row">
                         <div class="col-12 col-lg-6">
                             <div class="section-6-content-box">
+                                <div class="section-6-content-right">
+                                    <img src="https://cdn.prod.website-files.com/679bea1058c8174d2cc2eeed/67a24947c4abe7fbaff29153_Group%207.svg"
+                                        alt="">
+                                </div>
                                 <div class="section-6-content-left">
-                                    <p>Mitzi and Karen are our Office Administrator and Office Assistant, respectively.
-                                        Both of them have backgrounds as Registered Dental Assistants giving them a
-                                        strong clinical foundation that they bring to assist patients and staff with
-                                        everything from first visit through follow-up, working to schedule with
-                                        specialists, and understanding your account and any insurance benefits.</p>
-                                    <p>Sophia and Julie are our Clinical and Administrative Assistants and share
-                                        training in chairside assisting. Sophia will be at your side for procedures and
-                                        coordinates lab cases as well as keeping supplies available and instruments
-                                        sterilized. Julie works to keep incoming communication from specialists up to
-                                        date in patient files as well as managing safety protocols for the office.</p>
-                                    <p>Pam, Erin, and McKenna are our experienced and capable dental hygienists and
-                                        together offer knowledgeable, skillful, experienced, and thorough care to enable
-                                        our patients’ best periodontal health. They work along with Dr Carpenter to
-                                        assess and then determine correct care for each person’s condition and
-                                        circumstances.</p>
+                                    <h1 class="standard_heading">Over 35 Years of experience</h1>
+                                    <p>Dr. Leslie Carpenter has served families and individuals in her practice as a
+                                        general dentist. Located near the Playhouse district of downtown Pasadena,
+                                        located primarily.</p>
+                                    <p>Dr. Carpenter has been a resident of the Foothill communities for most of her
+                                        life, with the exception being her years in San Francisco as a student at
+                                        University of the Pacific Dugoni School of Dentistry.</p>
+                                    <p>Dr. Carpenter is continually active in local and national study groups and
+                                        continuing education with an emphasis on occlusal “bite” evaluation,
+                                        comprehensive and esthetic restoration, and maintenance necessary for comfort
+                                        and stability in all ages.</p>
+                                    <p>She offers a great variety of procedures to this goal including digital
+                                        radiographs, skillful periodontal care by her experienced hygienist staff, tooth
+                                        colored and gold restorations, occlusal guards, and implant-supported
+                                        rehabilitation.</p>
                                 </div>
                             </div>
 
                         </div>
                         <div class="col-12 col-lg-6 mt-4 mt-lg-0 section-6-img-col">
                             <div class="section-6-img">
-                                <img src="./assets/images/last-image.jpg" alt="">
+                                <img src="https://cdn.prod.website-files.com/67a3ee73f098d5e2742d5dfd/67c6e7b9a087d1edd8b0acf7_Dr%20Leslie.avif"
+                                    alt="">
                             </div>
                         </div>
                     </div>
                 </div>
 
+            </div>
+        </section>
+
+        <section class="home_page_section_6">
+            <div class="standard_container">
+                <div class="masonry">
+                    <img src="./assets/images/services-images/1.jpg"
+                        alt="">
+                    <img src="./assets/images/services-images/5.jpg"
+                        alt="">
+                    <img src="./assets/images/services-images/2.jpg"
+                        alt="">
+                    <img src="./assets/images/services-images/11.jpg"
+                        alt="">
+                    <img src="./assets/images/services-images/20.jpg"
+                        alt="">
+                    <img src="./assets/images/services-images/33.jpg"
+                        alt="">
+                    <img src="./assets/images/services-images/25.jpg"
+                        alt="">
+                    <img src="./assets/images/services-images/28.jpg"
+                        alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="home_page_section_4 pt-4">
+            <div class="standard_container" >
+                <div class="services_box">
+                    <div class="row">
+
+                        <div class="col-12 col-md-6 col-lg-4 mt-4">
+                            <div class="service_card">
+                                <div class="bg-card-box"></div>
+                                <div class="service_card_padding">
+                                    <div class="top-section">
+                                        <div class="card-content">
+                                            <h1 class="standard_heading">Leslie Carpenter</h1>
+                                            <p>Dentist</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4 mt-4">
+                            <div class="service_card">
+                                <div class="bg-card-box"></div>
+                                <div class="service_card_padding">
+                                    <div class="top-section">
+                                        <div class="card-content">
+                                            <h1 class="standard_heading">Karen</h1>
+                                            <p>Administrative Assistant</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4 mt-4">
+                            <div class="service_card">
+                                <div class="bg-card-box"></div>
+                                <div class="service_card_padding">
+                                    <div class="top-section">
+                                        <div class="card-content">
+                                            <h1 class="standard_heading">Maria</h1>
+                                            <p>Office Assistant</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4 mt-4">
+                            <div class="service_card">
+                                <div class="bg-card-box"></div>
+                                <div class="service_card_padding">
+                                    <div class="top-section">
+                                        <div class="card-content">
+                                            <h1 class="standard_heading">Julie</h1>
+                                            <p>Dental Services Assistant</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4 mt-4">
+                            <div class="service_card">
+                                <div class="bg-card-box"></div>
+                                <div class="service_card_padding">
+                                    <div class="top-section">
+                                        <div class="card-content">
+                                            <h1 class="standard_heading">Pam</h1>
+                                            <p>Registered Dental Hygienist</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4 mt-4">
+                            <div class="service_card">
+                                <div class="bg-card-box"></div>
+                                <div class="service_card_padding">
+                                    <div class="top-section">
+                                        <div class="card-content">
+                                            <h1 class="standard_heading">Lori</h1>
+                                            <p>Registered Dental Hygienist</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4 mt-4">
+                            <div class="service_card">
+                                <div class="bg-card-box"></div>
+                                <div class="service_card_padding">
+                                    <div class="top-section">
+                                        <div class="card-content">
+                                            <h1 class="standard_heading">Anush</h1>
+                                            <p>Registered Dental Hygienist</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4 mt-4">
+                            <div class="service_card">
+                                <div class="bg-card-box"></div>
+                                <div class="service_card_padding">
+                                    <div class="top-section">
+                                        <div class="card-content">
+                                            <h1 class="standard_heading">McKenna</h1>
+                                            <p>Registered Dental Hygienist</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -208,3 +330,18 @@
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 <script src="./assets/js/load_header.js"></script>
 <script src="./assets/js/script.js"></script>
+<script>
+    $(function () {
+        function setCols() {
+            var w = $(window).width(), cols;
+            if (w >= 1200) cols = 4;
+            else if (w >= 900) cols = 3;
+            else if (w >= 600) cols = 2;
+            else cols = 1;
+
+            $('.masonry').css('column-count', cols);
+        }
+        $(window).on('resize', setCols);
+        setCols();
+    });
+</script>
