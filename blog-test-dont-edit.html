@@ -35,6 +35,10 @@
     .section-3-main-box, .section-4-main-box {
         display: block; /* Overrides any potential flex/grid display */
     }
+    /* Fix for excessive left space in lists (not needed for new FAQ structure, but kept for other lists) */
+    .paras-box ul.list-disc {
+        padding-left: 0; /* Remove default padding from unordered lists */
+    }
 </style>
 
 <body>
@@ -124,8 +128,7 @@
                                 <div class="para">
                                     <!-- Main Content: Paragraph Text -->
                                     <p class="mb-4">Pediatric dental associations widely recommend that a child should have their first dental visit by age one. Alternatively, the visit should happen within six months after their first tooth appears—often around 6 to 10 months old.</p>
-                                    <p class="mb-6">Why so early? Cavities can develop as soon as teeth erupt. Baby teeth may be temporary, but they’re essential for chewing, speech, jaw development, and guiding adult teeth into position. Ignoring these early indicators can cause problems that extend beyond the mouth.</p>
-                                    <p class="mb-6">In fact, studies show that children who visit a dentist by age one are less likely to need restorative procedures in the future. That means fewer fillings, fewer extractions, and far fewer tears.</p>
+                                    <p>In fact, studies show that children who visit a dentist by age one are less likely to need restorative procedures in the future. That means fewer fillings, fewer extractions, and far fewer tears.</p>
                                 </div>
                             </div>
                         </div>
@@ -307,13 +310,29 @@
                             <h2 class="heading">FAQs</h2>
                             <div class="paras-box">
                                 <div class="para p-0">
-                                    <ul class="list-disc list-inside mb-6 space-y-2">
-                                        <li><strong>Q:</strong> At what age should a child go to the dentist for the first time? <strong>A:</strong> Experts recommend by age 1 or within six months after the first tooth appears.</li>
-                                        <li><strong>Q:</strong> What if my child is older and hasn’t seen a dentist yet? <strong>A:</strong> It’s never too late to start. Book a visit as soon as possible to address any issues and start preventive care.</li>
-                                        <li><strong>Q:</strong> Is fluoride safe for babies? <strong>A:</strong> Yes, in the correct dosage. Your dentist can advise you on appropriate use during your child’s visit.</li>
-                                        <li><strong>Q:</strong> Should I clean my baby’s teeth before their first visit? <strong>A:</strong> Yes, use a soft, damp cloth or baby toothbrush. This helps get them used to oral care.</li>
-                                        <li><strong>Q:</strong> What can I do to prepare my child for their first dental appointment? <strong>A:</strong> Talk positively about the visit, read children's books on the topic, and avoid expressing any fear or anxiety you might have.</li>
-                                    </ul>
+                                    <!-- Updated FAQ structure to remove li bullets for Q and put A on new line -->
+                                    <div class="mb-6 space-y-4">
+                                        <div>
+                                            <p><strong>Q: At what age should a child go to the dentist for the first time?</strong></p>
+                                            <p><strong>A:</strong> Experts recommend by age 1 or within six months after the first tooth appears.</p>
+                                        </div>
+                                        <div>
+                                            <p><strong>Q:</strong> What if my child is older and hasn’t seen a dentist yet?</p>
+                                            <p><strong>A:</strong> It’s never too late to start. Book a visit as soon as possible to address any issues and start preventive care.</p>
+                                        </div>
+                                        <div>
+                                            <p><strong>Q:</strong> Is fluoride safe for babies?</p>
+                                            <p><strong>A:</strong> Yes, in the correct dosage. Your dentist can advise you on appropriate use during your child’s visit.</p>
+                                        </div>
+                                        <div>
+                                            <p><strong>Q:</strong> Should I clean my baby’s teeth before their first visit?</p>
+                                            <p><strong>A:</strong> Yes, use a soft, damp cloth or baby toothbrush. This helps get them used to oral care.</p>
+                                        </div>
+                                        <div>
+                                            <p><strong>Q:</strong> What can I do to prepare my child for their first dental appointment?</p>
+                                            <p><strong>A:</strong> Talk positively about the visit, read children's books on the topic, and avoid expressing any fear or anxiety you might have.</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
