@@ -36,10 +36,14 @@
         display: block; /* Overrides any potential flex/grid display */
     }
     /* Fix for excessive left space in lists and paragraphs within content sections */
-    .paras-box ul, .paras-box p {
-        padding-left: 0 !important; /* Remove default padding from unordered lists and paragraphs */
+    .paras-box p {
+        padding-left: 0 !important; /* Ensure paragraphs have no default padding */
         margin-left: 0 !important; /* Ensure no default margin pushes content */
-        list-style-position: inside; /* Keep bullets inside the content flow */
+    }
+    .paras-box ul.list-disc {
+        padding-left: 0 !important; /* Remove default padding from unordered lists */
+        margin-left: 20px !important; /* Add margin to align text with header, bullet outside */
+        list-style-position: outside; /* Ensure bullets are outside the content flow */
     }
     /* Adjust specific list items if they have extra bolding */
     .paras-box ul.list-disc li strong {
