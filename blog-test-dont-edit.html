@@ -35,9 +35,15 @@
     .section-3-main-box, .section-4-main-box {
         display: block; /* Overrides any potential flex/grid display */
     }
-    /* Fix for excessive left space in lists (not needed for new FAQ structure, but kept for other lists) */
-    .paras-box ul.list-disc {
-        padding-left: 0; /* Remove default padding from unordered lists */
+    /* Fix for excessive left space in lists and paragraphs within content sections */
+    .paras-box ul, .paras-box p {
+        padding-left: 0 !important; /* Remove default padding from unordered lists and paragraphs */
+        margin-left: 0 !important; /* Ensure no default margin pushes content */
+        list-style-position: inside; /* Keep bullets inside the content flow */
+    }
+    /* Adjust specific list items if they have extra bolding */
+    .paras-box ul.list-disc li strong {
+        font-weight: normal; /* Override strong if it's causing unwanted bolding on bullets */
     }
 </style>
 
