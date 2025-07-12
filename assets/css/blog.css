@@ -1,0 +1,33 @@
+.card .heading {
+    background: transparent;
+    padding: 15px 0px;
+    text-align: start;
+}
+
+.card .card-body .card-text {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin: 0px;
+    flex-grow: 1;
+}
+
+.card .card-body .read-more {
+    font-family: "Open Sans", sans-serif;
+    color: #597462;
+    font-weight: 700;
+    font-size: 15px;
+    margin-top: 20px;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.card-link:hover .read-more {
+    color: #324137;
+}
+
+.card-link:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+}
