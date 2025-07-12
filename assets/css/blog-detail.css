@@ -95,7 +95,6 @@ a:hover {
 .article-body h3 {
     font-size: 1.75rem;
     margin-top: 0;
-    /* Adjusted for split layout */
     margin-bottom: 1rem;
 }
 
@@ -120,7 +119,6 @@ a:hover {
     font-weight: bold;
 }
 
-/* --- NEW: Split Section Layout --- */
 .split-section {
     display: flex;
     align-items: center;
@@ -143,7 +141,6 @@ a:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsive stacking for split sections */
 @media (max-width: 767px) {
     .split-section {
         flex-direction: column;
@@ -154,13 +151,11 @@ a:hover {
     }
 
     .split-section.reverse .image-content {
-        order: -1;
-        /* Image comes first on mobile for reverse sections */
+        order: 1;
     }
 }
 
 
-/* --- Key Takeaways Box --- */
 .key-takeaways {
     background-color: #f4f6f3;
     border-left: 5px solid #597462;
@@ -174,7 +169,6 @@ a:hover {
     color: #3d2f2a;
 }
 
-/* --- FAQ Section --- */
 .faq-section {
     margin-top: 4rem;
 }
@@ -235,14 +229,12 @@ a:hover {
 
 .faq-accordion-item.active .faq-answer {
     max-height: 200px;
-    /* Adjust if answers are longer */
 }
 
 .faq-accordion-item.active .faq-icon {
     transform: rotate(45deg);
 }
 
-/* --- Call to Action Section --- */
 .cta-section {
     background-color: #3d2f2a;
     color: white;
