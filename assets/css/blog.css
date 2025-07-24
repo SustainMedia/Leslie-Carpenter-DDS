@@ -2,6 +2,7 @@
     background: transparent;
     padding: 15px 0px;
     text-align: start;
+    text-transform: uppercase;
 }
 
 .card .card-body .card-text {
