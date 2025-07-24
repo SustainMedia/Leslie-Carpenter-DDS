@@ -2,7 +2,7 @@
     background: transparent;
     padding: 15px 0px;
     text-align: start;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 
 .card .card-body .card-text {
