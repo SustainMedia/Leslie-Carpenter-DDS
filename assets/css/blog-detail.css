@@ -48,6 +48,10 @@ a:hover {
     background-image: url('../images/blog-images/blog-5/1.webp');
 }
 
+#blog-6 {
+    background-image: url('../images/blog-images/blog-6/1.webp');
+}
+
 .blog-header {
     position: relative;
     color: white;
