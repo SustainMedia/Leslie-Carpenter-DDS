@@ -52,6 +52,22 @@ a:hover {
     background-image: url('../images/blog-images/blog-6/1.webp');
 }
 
+#blog-7 {
+    background-image: url('../images/blog-images/blog-7/1.jpg');
+}
+
+#blog-8 {
+    background-image: url('../images/blog-images/blog-8/1.jpg');
+}
+
+#blog-9 {
+    background-image: url('../images/blog-images/blog-9/1.jpg');
+}
+
+#blog-10 {
+    background-image: url('../images/blog-images/blog-10/1.jpg');
+}
+
 .blog-header {
     position: relative;
     color: white;
