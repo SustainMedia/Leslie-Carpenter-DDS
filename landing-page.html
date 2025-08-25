@@ -45,7 +45,6 @@
             background-color: #ffffff;
             padding: 2.5rem 2rem;
             border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         }
 
         .hero-form-container h3 {
@@ -173,6 +172,19 @@
         .faq-accordion-item.active .faq-icon {
             transform: rotate(45deg);
         }
+
+        #formResponse p {
+            margin-left: 10px;
+            font-size: 14px;
+        }
+
+        #formResponse .text-success {
+            color: green;
+        }
+
+        #formResponse .text-danger {
+            color: red;
+        }
     </style>
 </head>
 
@@ -209,18 +221,24 @@
                     <div class="col-12 col-lg-5 mt-5 mt-lg-0">
                         <div class="hero-form-container">
                             <h3>Schedule Your Visit</h3>
-                            <form>
+                            <form id="appointmentForm">
                                 <div class="mb-3">
-                                    <input type="text" class="form-control" placeholder="Full Name" required>
+                                    <input type="text" name="full_name" class="form-control" placeholder="Full Name" required>
                                 </div>
                                 <div class="mb-3">
-                                    <input type="email" class="form-control" placeholder="Email Address" required>
+                                    <input type="email" name="email" class="form-control" placeholder="Email Address" required>
                                 </div>
                                 <div class="mb-3">
-                                    <input type="tel" class="form-control" placeholder="Phone Number" required>
+                                    <input type="tel" name="phone" class="form-control" placeholder="Phone Number" required>
+                                </div>
+                                <div class="mb-3">
+                                    <textarea name="message" rows="5" class="form-control" placeholder="Tell us about the dental care you need!" required></textarea>
                                 </div>
                                 <button type="submit" class="nav-btn-2 w-100">Request Appointment</button>
                             </form>
+
+                            <div id="formResponse" class="mt-3"></div>
+
                         </div>
                     </div>
                 </div>
@@ -236,174 +254,94 @@
                 </div>
                 <div class="services_box">
                     <div class="row">
+                        <!-- Regular Check-ups -->
                         <div class="col-12 col-md-6 col-lg-4 mt-5">
-                            <a href="new-patient-exam.html" class="service-link">
-                                <div class="service_card">
-                                    <div class="bg-card-box"></div>
-                                    <div class="service_card_padding">
-                                        <div class="top-section">
-                                            <div class="card-img"><img src="./assets/images/services1.jpg"
-                                                    alt="New Patient Exam"></div>
-                                            <div class="card-content">
-                                                <h3 class="standard_heading">New Patient Exams</h3>
-                                                <p>Our initial examination includes a review of your concerns, health
-                                                    history, dental history, and current condition...</p>
-                                            </div>
+                            <div class="service_card">
+                                <div class="bg-card-box"></div>
+                                <div class="service_card_padding">
+                                    <div class="top-section">
+                                        <div class="card-img">
+                                            <img src="./assets/images/landing-page/services/1.jpg" alt="Regular Check-ups">
                                         </div>
-                                        <div class="bottom-section">
-                                            <div class="card_learn_more_box">
-                                                <p>Learn more</p>
-                                                <div class="arrow-right"><svg viewBox="0 0 24 24">
-                                                        <path d="M19 12H5m14 0-4 4m4-4-4-4" stroke="currentColor"
-                                                            stroke-width="2" fill="none" stroke-linecap="round"
-                                                            stroke-linejoin="round"></path>
-                                                    </svg></div>
-                                            </div>
+                                        <div class="card-content">
+                                            <h3 class="standard_heading">Regular Check-ups</h3>
+                                            <p>Routine dental exams help detect issues early and keep your family’s smiles healthy year-round.</p>
                                         </div>
                                     </div>
                                 </div>
-                            </a>
+                            </div>
                         </div>
+
+                        <!-- Professional Cleanings -->
                         <div class="col-12 col-md-6 col-lg-4 mt-5">
-                            <a href="peridontal-care-and-maintainance.html" class="service-link">
-                                <div class="service_card">
-                                    <div class="bg-card-box"></div>
-                                    <div class="service_card_padding">
-                                        <div class="top-section">
-                                            <div class="card-img"><img src="./assets/images/services2.jpg"
-                                                    alt="Periodontal Care"></div>
-                                            <div class="card-content">
-                                                <h3 class="standard_heading">Periodontal Care & Maintenance</h3>
-                                                <p>Our Registered Dental Hygienists provide expert periodontal care to
-                                                    prevent and treat gum disease...</p>
-                                            </div>
+                            <div class="service_card">
+                                <div class="bg-card-box"></div>
+                                <div class="service_card_padding">
+                                    <div class="top-section">
+                                        <div class="card-img">
+                                            <img src="./assets/images/landing-page/services/3.jpg" alt="Professional Cleanings">
                                         </div>
-                                        <div class="bottom-section">
-                                            <div class="card_learn_more_box">
-                                                <p>Learn more</p>
-                                                <div class="arrow-right"><svg viewBox="0 0 24 24">
-                                                        <path d="M19 12H5m14 0-4 4m4-4-4-4" stroke="currentColor"
-                                                            stroke-width="2" fill="none" stroke-linecap="round"
-                                                            stroke-linejoin="round"></path>
-                                                    </svg></div>
-                                            </div>
+                                        <div class="card-content">
+                                            <h3 class="standard_heading">Professional Cleanings</h3>
+                                            <p>Thorough cleanings remove plaque and tartar, helping prevent cavities and gum disease for all ages.</p>
                                         </div>
                                     </div>
                                 </div>
-                            </a>
+                            </div>
                         </div>
+
+                        <!-- Digital X-rays -->
                         <div class="col-12 col-md-6 col-lg-4 mt-5">
-                            <a href="temporomandibular-joint.html" class="service-link">
-                                <div class="service_card">
-                                    <div class="bg-card-box"></div>
-                                    <div class="service_card_padding">
-                                        <div class="top-section">
-                                            <div class="card-img"><img src="./assets/images/services3.jpg"
-                                                    alt="TMJ Evaluation"></div>
-                                            <div class="card-content">
-                                                <h3 class="standard_heading">Temporomandibular Joint (TMJ) Evaluation
-                                                </h3>
-                                                <p>We offer thorough evaluations for TMJ disorders and create custom
-                                                    occlusal guards as needed...</p>
-                                            </div>
+                            <div class="service_card">
+                                <div class="bg-card-box"></div>
+                                <div class="service_card_padding">
+                                    <div class="top-section">
+                                        <div class="card-img">
+                                            <img src="./assets/images/landing-page/services/5.jpeg" alt="Digital X-rays">
                                         </div>
-                                        <div class="bottom-section">
-                                            <div class="card_learn_more_box">
-                                                <p>Learn more</p>
-                                                <div class="arrow-right"><svg viewBox="0 0 24 24">
-                                                        <path d="M19 12H5m14 0-4 4m4-4-4-4" stroke="currentColor"
-                                                            stroke-width="2" fill="none" stroke-linecap="round"
-                                                            stroke-linejoin="round"></path>
-                                                    </svg></div>
-                                            </div>
+                                        <div class="card-content">
+                                            <h3 class="standard_heading">Digital X-rays</h3>
+                                            <p>Safe and low-radiation digital X-rays allow us to diagnose dental issues quickly and accurately.</p>
                                         </div>
                                     </div>
                                 </div>
-                            </a>
+                            </div>
                         </div>
+
+                        <!-- Cavity-Preventing Treatments -->
                         <div class="col-12 col-md-6 col-lg-4 mt-5">
-                            <a href="teeth-whitening.html" class="service-link">
-                                <div class="service_card">
-                                    <div class="bg-card-box"></div>
-                                    <div class="service_card_padding">
-                                        <div class="top-section">
-                                            <div class="card-img"><img src="./assets/images/service-teeth-whitening.jpg"
-                                                    alt="Teeth Whitening"></div>
-                                            <div class="card-content">
-                                                <h3 class="standard_heading">Teeth Whitening</h3>
-                                                <p>In-office care by Dr. Carpenter and take-home bleaching options are
-                                                    available to help you in brightening your smile.</p>
-                                            </div>
+                            <div class="service_card">
+                                <div class="bg-card-box"></div>
+                                <div class="service_card_padding">
+                                    <div class="top-section">
+                                        <div class="card-img">
+                                            <img src="./assets/images/landing-page/services/4.jpg" alt="Cavity-Preventing Treatments">
                                         </div>
-                                        <div class="bottom-section">
-                                            <div class="card_learn_more_box">
-                                                <p>Learn more</p>
-                                                <div class="arrow-right"><svg viewBox="0 0 24 24">
-                                                        <path d="M19 12H5m14 0-4 4m4-4-4-4" stroke="currentColor"
-                                                            stroke-width="2" fill="none" stroke-linecap="round"
-                                                            stroke-linejoin="round"></path>
-                                                    </svg></div>
-                                            </div>
+                                        <div class="card-content">
+                                            <h3 class="standard_heading">Cavity-Preventing Treatments</h3>
+                                            <p>Protective fluoride treatments and sealants help reduce the risk of tooth decay, especially for kids and teens.</p>
                                         </div>
                                     </div>
                                 </div>
-                            </a>
+                            </div>
                         </div>
+
+                        <!-- Care for All Ages -->
                         <div class="col-12 col-md-6 col-lg-4 mt-5">
-                            <a href="denture-care.html" class="service-link">
-                                <div class="service_card">
-                                    <div class="bg-card-box"></div>
-                                    <div class="service_card_padding">
-                                        <div class="top-section">
-                                            <div class="card-img"><img src="./assets/images/services5.jpg"
-                                                    alt="Denture Care"></div>
-                                            <div class="card-content">
-                                                <h3 class="standard_heading">Denture Care</h3>
-                                                <p>Dr. Carpenter will evaluate your teeth, your bite, and your options
-                                                    including removable or permanent dentures...</p>
-                                            </div>
+                            <div class="service_card">
+                                <div class="bg-card-box"></div>
+                                <div class="service_card_padding">
+                                    <div class="top-section">
+                                        <div class="card-img">
+                                            <img src="./assets/images/landing-page/services/2.jpg" alt="Care for All Ages">
                                         </div>
-                                        <div class="bottom-section">
-                                            <div class="card_learn_more_box">
-                                                <p>Learn more</p>
-                                                <div class="arrow-right"><svg viewBox="0 0 24 24">
-                                                        <path d="M19 12H5m14 0-4 4m4-4-4-4" stroke="currentColor"
-                                                            stroke-width="2" fill="none" stroke-linecap="round"
-                                                            stroke-linejoin="round"></path>
-                                                    </svg></div>
-                                            </div>
+                                        <div class="card-content">
+                                            <h3 class="standard_heading">Care for All Ages</h3>
+                                            <p>From kids to seniors, we provide gentle and personalized dental care tailored to each family member’s needs.</p>
                                         </div>
                                     </div>
                                 </div>
-                            </a>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4 mt-5">
-                            <a href="family-dental-care.html" class="service-link">
-                                <div class="service_card">
-                                    <div class="bg-card-box"></div>
-                                    <div class="service_card_padding">
-                                        <div class="top-section">
-                                            <div class="card-img"><img src="./assets/images/services6.jpg"
-                                                    alt="Family Dental Care"></div>
-                                            <div class="card-content">
-                                                <h3 class="standard_heading">Family Dental Care</h3>
-                                                <p>Fun and engaging care is our specialty for all ages, especially our
-                                                    young patients.</p>
-                                            </div>
-                                        </div>
-                                        <div class="bottom-section">
-                                            <div class="card_learn_more_box">
-                                                <p>Learn more</p>
-                                                <div class="arrow-right"><svg viewBox="0 0 24 24">
-                                                        <path d="M19 12H5m14 0-4 4m4-4-4-4" stroke="currentColor"
-                                                            stroke-width="2" fill="none" stroke-linecap="round"
-                                                            stroke-linejoin="round"></path>
-                                                    </svg></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -591,6 +529,67 @@
             });
         });
     </script>
+
+    <script>
+    $(document).ready(function () {
+        $("#appointmentForm").on("submit", function (e) {
+            e.preventDefault();
+
+            let form = $(this);
+            let formData = form.serialize();
+
+            let name = $("input[name='full_name']").val().trim();
+            let email = $("input[name='email']").val().trim();
+            let phone = $("input[name='phone']").val().trim();
+            let message = $("textarea[name='message']").val().trim();
+
+            if (name.length < 2) {
+                $("#formResponse").html("<p class='text-danger'>Please enter your full name.</p>");
+                return;
+            }
+            if (!/^\S+@\S+\.\S+$/.test(email)) {
+                $("#formResponse").html("<p class='text-danger'>Please enter a valid email address.</p>");
+                return;
+            }
+            if (!/^\d{7,15}$/.test(phone.replace(/\D/g, ''))) {
+                $("#formResponse").html("<p class='text-danger'>Please enter a valid phone number.</p>");
+                return;
+            }
+            if (message.length < 5) {
+                $("#formResponse").html("<p class='text-danger'>Please describe your dental needs.</p>");
+                return;
+            }
+
+            console.log(formData)
+
+            setTimeout(() => {
+                window.location.href = 'thank-you.html'
+            }, 3000);
+
+            // $.ajax({
+            //     url: "backend/appointment.php",
+            //     type: "POST",
+            //     data: formData,
+            //     dataType: "json",
+            //     beforeSend: function () {
+            //         $("#formResponse").html("<p class='text-info'>Submitting...</p>");
+            //     },
+            //     success: function (response) {
+            //         if (response.status) {
+            //             $("#formResponse").html("<p class='text-success'>" + response.message + "</p>");
+            //             form[0].reset();
+            //         } else {
+            //             $("#formResponse").html("<p class='text-danger'>" + response.message + "</p>");
+            //         }
+            //     },
+            //     error: function () {
+            //         $("#formResponse").html("<p class='text-danger'>Something went wrong. Please try again.</p>");
+            //     }
+            // });
+        });
+    });
+    </script>
+
 </body>
 
 </html>
