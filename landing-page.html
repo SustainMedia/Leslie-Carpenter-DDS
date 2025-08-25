@@ -562,30 +562,30 @@
 
             console.log(formData)
 
-            setTimeout(() => {
-                window.location.href = 'thank-you.html'
-            }, 2000);
+            $.ajax({
+                url: "https://groundsmennc.com/assets/php/submit-landing-page-form-leslie-carpenter.php",
+                type: "POST",
+                data: formData,
+                dataType: "json",
+                success: function (response) {
 
-            // $.ajax({
-            //     url: "backend/appointment.php",
-            //     type: "POST",
-            //     data: formData,
-            //     dataType: "json",
-            //     beforeSend: function () {
-            //         $("#formResponse").html("<p class='text-info'>Submitting...</p>");
-            //     },
-            //     success: function (response) {
-            //         if (response.status) {
-            //             $("#formResponse").html("<p class='text-success'>" + response.message + "</p>");
-            //             form[0].reset();
-            //         } else {
-            //             $("#formResponse").html("<p class='text-danger'>" + response.message + "</p>");
-            //         }
-            //     },
-            //     error: function () {
-            //         $("#formResponse").html("<p class='text-danger'>Something went wrong. Please try again.</p>");
-            //     }
-            // });
+                    console.log(response)
+
+                    if (response.status) {
+                        $("#formResponse").html("<p class='text-success'>" + response.message + "</p>");
+                        form[0].reset();
+                        setTimeout(() => {
+                            window.location.href = 'thank-you.html'
+                        }, 2000);
+                    } else {
+                        $("#formResponse").html("<p class='text-danger'>" + response.message + "</p>");
+                    }
+                },
+                error: function (xhr) {
+                    console.log("Raw response:", xhr.responseText);
+                    $("#formResponse").html("<p class='text-danger'>Something went wrong. Please try again.</p>");
+                }
+            });
         });
     });
     </script>
