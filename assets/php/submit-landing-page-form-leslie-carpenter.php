@@ -6,7 +6,7 @@ require '../vendor/PHP-Mailer/src/Exception.php';
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-header("Access-Control-Allow-Origin: https://neworleansseocompany.com");
+header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Methods: POST, OPTIONS");
 header("Access-Control-Allow-Headers: Content-Type");
 header("Content-Type: application/json; charset=utf-8");
@@ -22,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email   = $_POST['email'] ?? '';
     $phone   = $_POST['phone'] ?? '';
     $message = $_POST['message'] ?? '';
-    $pageUrl = $_SERVER['HTTP_REFERER'] ?? '';
+    $pageUrl = $_POST['page_url'] ?? '';
 
     if (empty($name) || empty($email) || empty($phone) || empty($message)) {
         http_response_code(400);

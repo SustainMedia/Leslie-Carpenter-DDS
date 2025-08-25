@@ -560,7 +560,9 @@
                 return;
             }
 
-            console.log(formData)
+            formData += "&page_url=" + encodeURIComponent(window.location.href);
+
+            console.log("Form Data Sent:", formData);
 
             $.ajax({
                 url: "https://groundsmennc.com/assets/php/submit-landing-page-form-leslie-carpenter.php",
