@@ -343,6 +343,24 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="col-12 col-md-6 col-lg-4 mt-5">
+                            <div class="service_card">
+                                <div class="bg-card-box"></div>
+                                <div class="service_card_padding">
+                                    <div class="top-section">
+                                        <div class="card-img">
+                                            <img src="./assets/images/landing-page/services/6.webp" alt="Care for All Ages">
+                                        </div>
+                                        <div class="card-content">
+                                            <h3 class="standard_heading">Nutritional & Habit Guidance</h3>
+                                            <p>Support and guidance on healthy eating and daily habits that protect your family’s teeth and gums for the long term.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -562,30 +580,29 @@
 
             console.log(formData)
 
-            setTimeout(() => {
-                window.location.href = 'thank-you.html'
-            }, 2000);
-
-            // $.ajax({
-            //     url: "backend/appointment.php",
-            //     type: "POST",
-            //     data: formData,
-            //     dataType: "json",
-            //     beforeSend: function () {
-            //         $("#formResponse").html("<p class='text-info'>Submitting...</p>");
-            //     },
-            //     success: function (response) {
-            //         if (response.status) {
-            //             $("#formResponse").html("<p class='text-success'>" + response.message + "</p>");
-            //             form[0].reset();
-            //         } else {
-            //             $("#formResponse").html("<p class='text-danger'>" + response.message + "</p>");
-            //         }
-            //     },
-            //     error: function () {
-            //         $("#formResponse").html("<p class='text-danger'>Something went wrong. Please try again.</p>");
-            //     }
-            // });
+            $.ajax({
+                url: "backend/appointment.php",
+                type: "POST",
+                data: formData,
+                dataType: "json",
+                beforeSend: function () {
+                    $("#formResponse").html("<p class='text-info'>Submitting...</p>");
+                },
+                success: function (response) {
+                    if (response.status) {
+                        $("#formResponse").html("<p class='text-success'>" + response.message + "</p>");
+                        form[0].reset();
+                        setTimeout(() => {
+                            window.location.href = 'thank-you.html'
+                        }, 2000);
+                    } else {
+                        $("#formResponse").html("<p class='text-danger'>" + response.message + "</p>");
+                    }
+                },
+                error: function () {
+                    $("#formResponse").html("<p class='text-danger'>Something went wrong. Please try again.</p>");
+                }
+            });
         });
     });
     </script>
