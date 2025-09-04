@@ -68,6 +68,22 @@ a:hover {
     background-image: url('../images/blog-images/blog-10/1.jpg');
 }
 
+#blog-11 {
+    background-image: url('../images/blog-images/blog-11/1.jpg');
+}
+
+#blog-12 {
+    background-image: url('../images/blog-images/blog-12/1.jpg');
+}
+
+#blog-13 {
+    background-image: url('../images/blog-images/blog-13/1.jpg');
+}
+
+#blog-14 {
+    background-image: url('../images/blog-images/blog-14/1.jpg');
+}
+
 .blog-header {
     position: relative;
     color: white;
